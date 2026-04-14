@@ -1,0 +1,11 @@
+[Unit]
+Description=Yoriito Emergency Sample App
+Requires=sample-app.service sample-pal.service
+After=sample-app.service sample-pal.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/flutter-pi --release yoriito-emergency-app/%%FLUTTER_SDK_VERSION%%/%%FLUTTER_RUNTIME_MODE%%
+
+[Install]
+WantedBy=multi-user.target
