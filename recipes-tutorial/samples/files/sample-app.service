@@ -1,0 +1,12 @@
+[Unit]
+Description=Sample Headless App
+Requires=kura.service
+After=kura.service
+Before=yoriito-emergency-app.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ref_app
+
+[Install]
+WantedBy=multi-user.target
