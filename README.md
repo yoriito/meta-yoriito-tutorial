@@ -1,4 +1,4 @@
-# meta-yoriito
+# meta-yoriito-tutorial
 
 This layer provides the demo & tutorial components from the Yoriito project for integration with the Yocto Project.
 
@@ -21,12 +21,12 @@ To build the image, you can use the following commands:
 ```bash
 # Get repo
 mkdir -p ~/.local/bin
-curl https://storage.googleapis.com/git-repo-download/repo > ~/.local/bin/repo
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.local/bin/repo
 chmod a+x ~/.local/bin/repo
 export PATH=$PATH:~/.local/bin
 
 # Fetch the layers
-repo init -u https://github.com/yoriito/integration.git
+repo init -u https://github.com/yoriito/yoriito.git
 repo sync
 
 # Configure the build environment
